@@ -1,6 +1,7 @@
 :root {
     --hd-bg-color: #213448;
     --hd-txt-color: #ffffff;
+    --scn-color: #01A5E2;
 }
 
 * {
@@ -13,13 +14,50 @@ h1 {
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .header {
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: 150px;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     background-color: var(--hd-bg-color);
     color: var(--hd-txt-color);
+}
+
+.main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sections {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inventario {
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 0 50px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.action-icon {
+    width: 50px;
 }
